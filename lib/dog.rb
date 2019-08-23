@@ -3,7 +3,7 @@ require 'pry'
 
 class Dog 
   #setters, getters
-  attr_accessor :name, :save
+  attr_accessor :name
   
   #class variables
   @@all = []
@@ -11,8 +11,6 @@ class Dog
   def initialize(name)
     @name = name
     save
-#    @@all << self
-#binding.pry
   end
   
   def self.all
